@@ -3,7 +3,11 @@
 # comes with Ruby!
 
 def reverse_a_string(string)
-
+  reversed = ""
+  string.length.times do |n|
+    reversed += string[(string.length-1)-n]
+  end
+  return reversed
 end
 
 # Driver code - don't touch anything below this line.
